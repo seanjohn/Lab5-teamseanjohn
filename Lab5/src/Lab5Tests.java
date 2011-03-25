@@ -1,5 +1,10 @@
 
+import static org.junit.Assert.*;
+
+import java.util.ArrayList;
+
 import org.junit.Before;
+import org.junit.Test;
 
 
 /**
@@ -10,13 +15,9 @@ import org.junit.Before;
  */
 public class Lab5Tests {
 
-	/**
-	 * TODO Put here a description of what this method does.
-	 *
-	 * @throws java.lang.Exception
-	 */
-	@Before
-	public void setUp() throws Exception {
+	@Test
+	public void Test1(){
+		assertEquals(new ArrayList<Integer>(),Lab5.primeFactorization(1));
 	}
 
 }
