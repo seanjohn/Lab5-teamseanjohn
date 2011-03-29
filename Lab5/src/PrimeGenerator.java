@@ -7,14 +7,12 @@ public class PrimeGenerator {
 		// TODO Auto-generated method stub
 		ArrayList<Integer> ret= new ArrayList<Integer>();
 		int x =2;
-		while(i>x){
-			ret.add(x);
-			x++;
+		for(;x<i;x++){
+			if(Lab5.primeFactorization(x).size()==1)
+				ret.add(x);
 		}
-	
 		return ret;
 	}
-
 	
 	
 }
