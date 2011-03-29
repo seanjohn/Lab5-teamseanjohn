@@ -45,6 +45,11 @@ public class Lab5Tests {
 		assertEquals(createArray(2,2,2),Lab5.primeFactorization(8));
 	}
 	
+	@Test
+	public void Test9(){
+		assertEquals(createArray(3,3),Lab5.primeFactorization(9));
+	}
+	
 	public ArrayList<Integer> createArray(int...ints){
 		ArrayList<Integer> result = new ArrayList<Integer>();
 		for(int x: ints){
