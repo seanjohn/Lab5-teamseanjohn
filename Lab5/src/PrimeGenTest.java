@@ -17,5 +17,18 @@ public class PrimeGenTest {
 	public void Test2(){
 		assertEquals(new ArrayList<Integer>(),PrimeGenerator.primeGen(2));
 	}
+	
+	@Test
+	public void Test3(){
+		assertEquals(createArray(2),PrimeGenerator.primeGen(3));
+	}
+	
+	public ArrayList<Integer> createArray(int...ints){
+		ArrayList<Integer> result = new ArrayList<Integer>();
+		for(int x: ints){
+			result.add(x);
+		}
+		return result;
+	}
 
 }
