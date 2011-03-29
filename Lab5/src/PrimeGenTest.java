@@ -12,5 +12,10 @@ public class PrimeGenTest {
 	public void Test1(){
 		assertEquals(new ArrayList<Integer>(),PrimeGenerator.primeGen(1));
 	}
+	
+	@Test
+	public void Test2(){
+		assertEquals(new ArrayList<Integer>(),PrimeGenerator.primeGen(2));
+	}
 
 }
