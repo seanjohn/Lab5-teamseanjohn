@@ -5,10 +5,11 @@ public class Lab5 {
 
 	public static ArrayList<Integer> primeFactorization(int a){
 		ArrayList<Integer> ret= new ArrayList<Integer>();
-		while(a % 2 ==0){
-			ret.add(2);
-			a/=2;
-		}
+		for(int candidate = 2; a>1; candidate++){
+		while(a % candidate ==0){
+			ret.add(candidate);
+			a/=candidate;
+		}}
 		if(a>1)
 			ret.add(a);
 		

@@ -50,6 +50,10 @@ public class Lab5Tests {
 		assertEquals(createArray(3,3),Lab5.primeFactorization(9));
 	}
 	
+	@Test
+	public void TestBIGNUMBER(){
+		assertEquals(createArray(5,7,7,1327),Lab5.primeFactorization(325115));
+	}
 	public ArrayList<Integer> createArray(int...ints){
 		ArrayList<Integer> result = new ArrayList<Integer>();
 		for(int x: ints){
