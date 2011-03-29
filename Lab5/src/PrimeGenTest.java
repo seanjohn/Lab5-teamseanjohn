@@ -28,6 +28,11 @@ public class PrimeGenTest {
 		assertEquals(createArray(2,3),PrimeGenerator.primeGen(4));
 	}
 	
+	@Test
+	public void Test6(){
+		assertEquals(createArray(2,3,5),PrimeGenerator.primeGen(6));
+	}
+	
 	public ArrayList<Integer> createArray(int...ints){
 		ArrayList<Integer> result = new ArrayList<Integer>();
 		for(int x: ints){
