@@ -30,6 +30,11 @@ public class Lab5Tests {
 		assertEquals(createArray(3),Lab5.primeFactorization(3));
 	}
 	
+	@Test
+	public void Test4(){
+		assertEquals(createArray(2,2),Lab5.primeFactorization(4));
+	}
+	
 	public ArrayList<Integer> createArray(int...ints){
 		ArrayList<Integer> result = new ArrayList<Integer>();
 		for(int x: ints){
